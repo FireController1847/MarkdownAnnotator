@@ -79,7 +79,7 @@ module.exports = [
             new webpack.BannerPlugin({ banner, raw: true }),
             new HtmlWebpackPlugin({
                 template: "./src/html/app.html",
-                filename: "app.html",
+                filename: "index.html",
                 inject: "body"
             }),
             new CopyWebpackPlugin({
@@ -119,7 +119,7 @@ module.exports = [
             }),
             new HtmlWebpackPlugin({
                 template: "./src/html/app.html",
-                filename: "app.html",
+                filename: "index.html",
                 inject: "body"
             })
         ]

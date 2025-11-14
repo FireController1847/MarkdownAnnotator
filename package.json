@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/FireController1847/MarkdownAnnotator#readme",
   "devDependencies": {
+    "@types/commonmark": "^0.27.10",
+    "@types/jquery": "^3.5.33",
     "@types/node": "^24.3.0",
     "@typescript-eslint/eslint-plugin": "^8.41.0",
     "@typescript-eslint/parser": "^8.41.0",
@@ -44,5 +46,13 @@
     "typescript": "^5.9.2",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "@codemirror/lang-markdown": "^6.5.0",
+    "codemirror": "^6.0.2",
+    "commonmark": "^0.31.2",
+    "highlight.js": "^11.11.1",
+    "jquery": "^3.7.1",
+    "universal-emoji-parser": "^2.0.75"
   }
 }
