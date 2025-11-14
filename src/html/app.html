@@ -8,12 +8,32 @@
     </head>
     <body>
         <div id="controls">
-            <div id="controls-primary"></div>
+            <div id="controls-primary">
+                <div id="file-dropdown-container" class="dropdown-container">
+                    <button id="file-dropdown-button" class="dropdown-button">File</button>
+                    <div id="file-dropdown-menu" class="dropdown-menu">
+                        <button id="new-button" class="dropdown-button dropdown-menu-button">New...</button>
+                        <button id="save-button" class="dropdown-button dropdown-menu-button">Save...</button>
+                        <button id="open-button" class="dropdown-button dropdown-menu-button">Open...</button>
+                    </div>
+                </div>
+                <div id="help-dropdown-container" class="dropdown-container">
+                    <button id="help-dropdown-button" class="dropdown-button">Help</button>
+                    <div id="help-dropdown-menu" class="dropdown-menu">
+                        <button id="github-button" class="dropdown-button dropdown-menu-button">Contribute</button>
+                        <button id="about-button" class="dropdown-button dropdown-menu-button">About</button>
+                    </div>
+                </div>
+            </div>
             <div id="controls-filler"></div>
             <div id="controls-secondary">
                 <div>
                     <input type="checkbox" id="toggle-preview" checked>
                     <label for="toggle-preview">Preview</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="toggle-word-wrap" checked>
+                    <label for="toggle-word-wrap">Word Wrap</label>
                 </div>
             </div>
         </div>

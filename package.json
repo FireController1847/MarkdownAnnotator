@@ -1,7 +1,7 @@
 {
   "name": "markdown-annontator",
   "version": "1.0.0",
-  "description": " Share, annonate, and request reviews for your Markdown files. ",
+  "description": "Share, annonate, and request reviews for your Markdown files. ",
   "main": "index.js",
   "directories": {
     "lib": "lib",

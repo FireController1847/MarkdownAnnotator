@@ -1,7 +1,8 @@
 const webpack = require("webpack");
 const path = require("path");
-const { version } = require("./package.json");
+const { version, author, description, license } = require("./package.json");
 const TerserPlugin = require("terser-webpack-plugin");
+const DefinePlugin = require("webpack").DefinePlugin;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const banner = `/*!
@@ -87,6 +88,12 @@ module.exports = [
                     { from: "./src/resource", to: "./resource" },
                     { from: "./src/lib", to: "./lib" }
                 ]
+            }),
+            new DefinePlugin({
+                __APP_VERSION__: JSON.stringify(version),
+                __APP_AUTHOR__: JSON.stringify(author),
+                __APP_DESCRIPTION__: JSON.stringify(description),
+                __APP_LICENSE__: JSON.stringify(license)
             })
         ]
     },
@@ -121,6 +128,12 @@ module.exports = [
                 template: "./src/html/app.html",
                 filename: "index.html",
                 inject: "body"
+            }),
+            new DefinePlugin({
+                __APP_VERSION__: JSON.stringify(version),
+                __APP_AUTHOR__: JSON.stringify(author),
+                __APP_DESCRIPTION__: JSON.stringify(description),
+                __APP_LICENSE__: JSON.stringify(license)
             })
         ]
     }
